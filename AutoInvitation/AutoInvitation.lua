@@ -33,4 +33,4 @@ SlashCmdList.AI = function()
         f:UnregisterEvent("CHAT_MSG_CHANNEL")
     end
 end
-SLASH_AI1 = "/ai"
+SLASH_AI1 = "/ai-group"

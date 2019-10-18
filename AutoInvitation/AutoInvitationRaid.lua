@@ -25,4 +25,4 @@ SlashCmdList.AIONE = function()
       o:UnregisterEvent("CHAT_MSG_CHANNEL")
      end
    end
-SLASH_AIONE1 = "/airaid"
+SLASH_AIONE1 = "/ai-raid"

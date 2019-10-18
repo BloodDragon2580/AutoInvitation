@@ -1,6 +1,6 @@
 ## Interface: 80205
 ## Title: |cffd6266cAutoInvitation|r
-## Version: 1.0
+## Version: 1.1
 ## Notes: AutoInvitation
 ## Author: BloodDragon2580
 
