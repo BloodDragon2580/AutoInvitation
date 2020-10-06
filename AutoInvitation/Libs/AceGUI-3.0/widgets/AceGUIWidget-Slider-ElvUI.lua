@@ -2,7 +2,7 @@
 Slider Widget
 Graphical Slider, like, for Range values.
 -------------------------------------------------------------------------------]]
-local Type, Version = "Slider", 23
+local Type, Version = "Slider-ElvUI", 1
 local AceGUI = LibStub and LibStub("AceGUI-3.0", true)
 if not AceGUI or (AceGUI:GetWidgetVersion(Type) or 0) >= Version then return end
 
@@ -176,12 +176,15 @@ local methods = {
 	end,
 
 	["SetSliderValues"] = function(self, min, max, step)
+		if type(min) == 'function' then min = min() end
+		if type(max) == 'function' then max = max() end
+
 		local frame = self.slider
 		frame.setup = true
 		self.min = min
 		self.max = max
 		self.step = step
-		frame:SetMinMaxValues(min or 0,max or 100)
+		frame:SetMinMaxValues(min or 0, max or 100)
 		UpdateLabels(self)
 		frame:SetValueStep(step or 1)
 		if self.value then
@@ -225,7 +228,7 @@ local function Constructor()
 	label:SetJustifyH("CENTER")
 	label:SetHeight(15)
 
-	local slider = CreateFrame("Slider", nil, frame, BackdropTemplateMixin and "BackdropTemplate" or nil)
+	local slider = CreateFrame("Slider", nil, frame)
 	slider:SetOrientation("HORIZONTAL")
 	slider:SetHeight(15)
 	slider:SetHitRectInsets(0, 0, -10, 0)
@@ -247,7 +250,7 @@ local function Constructor()
 	local hightext = slider:CreateFontString(nil, "ARTWORK", "GameFontHighlightSmall")
 	hightext:SetPoint("TOPRIGHT", slider, "BOTTOMRIGHT", -2, 3)
 
-	local editbox = CreateFrame("EditBox", nil, frame, BackdropTemplateMixin and "BackdropTemplate" or nil)
+	local editbox = CreateFrame("EditBox", nil, frame)
 	editbox:SetAutoFocus(false)
 	editbox:SetFontObject(GameFontHighlightSmall)
 	editbox:SetPoint("TOP", slider, "BOTTOM")
