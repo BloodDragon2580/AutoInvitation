@@ -12,3 +12,5 @@ and
 "/ai1"
 
 The second macro continues to search for players when the group should be full. For example, if you change to a raid.
+
+Download Count https://hanadigital.github.io/grev/?user=BloodDragon2580&repo=AutoInvitation
