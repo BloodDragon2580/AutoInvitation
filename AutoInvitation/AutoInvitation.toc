@@ -1,6 +1,6 @@
 ## Interface: 90200
 ## Title: |cffd6266cAutoInvitation|r
-## Version: 2.6
+## Version: 2.7
 ## Notes: AutoInvitation
 ## Author: BloodDragon2580
 
