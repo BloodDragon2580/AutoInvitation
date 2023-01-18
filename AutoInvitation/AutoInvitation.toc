@@ -1,6 +1,6 @@
-## Interface: 100002
+## Interface: 100005
 ## Title: |cffd6266cAutoInvitation|r
-## Version: 3.2
+## Version: 3.3
 ## Notes: AutoInvitation
 ## Author: BloodDragon2580
 
