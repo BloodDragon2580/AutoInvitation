@@ -1,8 +1,9 @@
 ## Interface: 100100
 ## Title: |cffd6266cAutoInvitation|r
-## Version: 3.5
+## Version: 3.6
 ## Notes: AutoInvitation
 ## Author: BloodDragon2580
+## IconTexture: Interface\AddOns\AutoInvitation\Media\Texture\logo
 
 embeds.xml
 
