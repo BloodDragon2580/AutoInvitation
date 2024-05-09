@@ -1,6 +1,6 @@
-## Interface: 100206
+## Interface: 100207
 ## Title: |cffd6266cAutoInvitation|r
-## Version: 4.3
+## Version: 4.4
 ## Notes: AutoInvitation
 ## Author: BloodDragon2580
 ## IconTexture: Interface\AddOns\AutoInvitation\Media\Texture\logo
